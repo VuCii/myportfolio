@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vusi Ntombela- Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Vusi Ntombela</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="C:\Users\vucii\OneDrive\Documents\2023 MIDYEAR MAIN QP THEORY OF ICT PROFESSIONAL PRACTICE 3 TIPP301.pdf" class="resume-button" download>Download Resume</a>
+        </nav>
+        <div class="intro">
+            <img class="avatar" src="c:\Users\vucii\Downloads\—Pngtree—man avatar image for profile_13001882.png" alt="Profile Avatar">
+            <h1>Hi, I'm <span>Vusumuzi Ntombela</span></h1>
+            <p>Web Developer | Creative Technologist</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <h3>My Inspiration for Technology</h3>
+        <p>
+            Growing up in a disadvantaged background, I saw firsthand how technology can be a <span class="highlight">powerful equalizer</span>. 
+            My interest in web development began when I realized I could <span class="highlight">build something meaningful from scratch</span>—a digital space where ideas come to life. 
+            This sparked my passion for making technology accessible to everyone, especially underrepresented communities.
+        </p>
+        <h3>Challenges That Shaped Me</h3>
+        <p>
+            Coming from a <span class="highlight">poor background</span>, I often lacked the resources many take for granted, like access to a computer or the internet. 
+            But these challenges only fueled my determination. I found ways to learn, often spending long hours in public libraries. 
+            These experiences made me <span class="highlight">resilient, adaptable, and resourceful</span>—qualities that continue to shape my approach to problem-solving.
+        </p>
+        <h3>Creative Problem-Solving</h3>
+        <p>
+            My background has shaped me into a <span class="highlight">creative problem-solver</span>. When faced with challenges, I don't see limitations as barriers; 
+            instead, I use them as <span class="highlight">catalysts for innovation</span>. Whether it’s a complex technical problem or a design constraint, 
+            I approach each task with an open mind, always looking for <span class="highlight">unique solutions</span>.
+        </p>
+        <h3>Technical Skills and Values</h3>
+        <p>
+            I bring a <span class="highlight">strong command of HTML, CSS, and JavaScript</span>, allowing me to design and build responsive, user-friendly websites. 
+            Beyond these technical skills, I’m known for my <span class="highlight">perseverance, adaptability, and work ethic</span>. 
+            I approach every project with a high level of dedication and never shy away from learning new technologies to improve my craft.
+        </p>
+        <h3>Projects Reflecting Personal Growth</h3>
+        <p>
+            One of the projects I’m most proud of is a <span class="highlight">Neighborhood Watch Platform</span> I developed to help communities report suspicious activities 
+            and connect with law enforcement. This project resonates with my personal commitment to <span class="highlight">giving back</span>. 
+            I’ve also worked on various sports fixture apps and payroll management systems, each helping me grow and hone my skills while addressing <span class="highlight">real-world challenges</span>.
+        </p>
+        <h3>Vision for the Future</h3>
+        <p>
+            In the future, I want to use my skills to <span class="highlight">empower others</span>, particularly in underserved communities. 
+            I see myself contributing to the tech world by building platforms that <span class="highlight">bridge the gap between those with and without access to technology</span>. 
+            Whether through mentorship or creating <span class="highlight">inclusive digital solutions</span>, my goal is to make technology a tool for social change.
+        </p>
+        <h3>Role Models and Influences</h3>
+        <p>
+            My biggest influences come from both personal and professional spaces. 
+            My parents, who taught me the value of <span class="highlight">hard work and perseverance</span>, are my greatest inspiration. 
+            In the tech world, figures like <span class="highlight">Elon Musk</span> inspire me with their relentless pursuit of innovation, 
+            while <span class="highlight">Tim Berners-Lee</span>’s creation of the World Wide Web reminds me of the immense impact technology can have on the world.
+        </p>
+        <h3>What Sets Me Apart</h3>
+        <p>
+            What makes me unique is not just my technical expertise but my <span class="highlight">empathy and commitment</span> to continuous growth. 
+            My background has instilled in me a drive to <span class="highlight">help others and create meaningful solutions</span>. 
+            Whether it’s solving a small bug or working on a large-scale project, I approach every task with dedication and the desire to <span class="highlight">make a difference</span>.
+        </p>
+    </section>
+    
+</body>
+
+</html>
+
+<style>
+    body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(to right, #0f2027, #2c5364);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Allow for background effects */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); /* Adds a nice overlay */
+    z-index: 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s; /* Added transform */
+}
+
+.nav-links a:hover {
+    color: #00d9ff;
+    transform: scale(1.1); /* Slightly grow on hover */
+}
+
+.intro h1 span {
+    color: #00d9ff;
+}
+
+.intro .cta-btn {
+    background-color: #00d9ff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s; /* Added box-shadow */
+}
+
+.intro .cta-btn:hover {
+    background-color: #008CBA;
+    box-shadow: 0 4px 20px rgba(0, 200, 255, 0.5); /* Shadow effect */
+}
+
+.intro img.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 4px solid #00d9ff;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #ff5733; /* Highlight color for important points */
+}
+
+section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: left;
+}
+
+h2, h3 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3; /* Underline effect */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.resume-button {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform */
+}
+
+.resume-button:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05); /* Grow on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+</style>

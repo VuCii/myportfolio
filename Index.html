@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VuCii Dev- Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+</head>
+<body>
+    <body>
+        <header>
+            
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-code"></i> VuCii Dev
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <a href="path/to/your/resume.pdf" class="resume-button" download>Download Resume</a>
+            </nav>
+            <style>
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem;
+                    background: rgba(15, 32, 39, 0.9); /* Match your header background */
+                    position: fixed;
+                    width: 100%;
+                    top: 0;
+                    z-index: 1000;
+                }
+                .nav-links {
+                    display: flex;
+                    list-style: none;
+                }
+                .nav-links li {
+                    margin: 0 1rem;
+                }
+                .nav-links a {
+                    color: white;
+                    text-decoration: none;
+                }
+                .hamburger-menu {
+                    display: none;
+                    cursor: pointer;
+                }
+                .bar {
+                    width: 25px;
+                    height: 3px;
+                    background-color: white;
+                    margin: 5px 0;
+                }
+                @media (max-width: 768px) {
+                    .nav-links {
+                        display: none;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 60px;
+                        left: 0;
+                        width: 100%;
+                        background: rgba(15, 32, 39, 0.9);
+                    }
+                    .nav-links.active {
+                        display: flex;
+                    }
+                    .nav-links li {
+                        margin: 1rem 0;
+                    }
+                    .hamburger-menu {
+                        display: block;
+                    }
+                }
+            </style>
+            <script>
+                function toggleMenu() {
+                    const navLinks = document.getElementById('nav-links');
+                    navLinks.classList.toggle('active');
+                }
+            </script>
+            <div class="intro">
+                <div class="avatar-container">
+                    <img class="avatar pop-out" src="images/vusi2.jpg" alt="Profile Avatar">
+                </div>
+                <style>
+                    .avatar-container {
+                        display: inline-block;
+                        transition: transform 0.3s ease;
+                    }
+                    .avatar-container:hover {
+                        transform: scale(1.1); /* Pop out effect */
+                    }
+                    .avatar {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        margin-bottom: 20px;
+                        object-fit: cover;
+                        border: 4px solid #00d9ff;
+                    }
+                </style>
+                <h1 class="animate__animated animate__zoomInDown">
+                    Hi. I'm <span>Vusumuzi Ntombela</span>
+                </h1>
+                <p class="animate__animated animate__zoomInDown">
+                    Web Developer | Creative Technologist | Full-Stack Enthusiast
+                </p>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">
+                    Crafting responsive web experiences with HTML5, CSS3, and JavaScript.
+                    Passionate about ASP.NET, SQL, and cloud technologies.
+                </p>
+                <a href="#projects" class="cta-btn animate__animated animate__bounce animate__infinite">View My Work</a>
+                
+                <ul class="social-links">
+                    <li><a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="mailto:your-email@example.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://wa.me/your-phone-number" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            
+            
+        </header>
+        <div class="project-card animate-on-scroll">
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p class="about-me animate__animated">
+                    Growing up in a disadvantaged background, I discovered how technology can be a powerful equalizer. 
+                    My passion for web development ignited when I realized I could build meaningful digital spaces. 
+                    Despite lacking resources, I became resilient, adaptable, and resourceful, spending hours learning in public libraries. 
+                    I see challenges as catalysts for innovation and strive for unique solutions in every project.
+                </p>
+                <p class="about-me animate__animated">
+                    I possess a strong command of HTML, CSS, and JavaScript, and I'm dedicated to continuous growth. 
+                    My projects, like a Neighborhood Watch Platform, reflect my commitment to empowering underserved communities. 
+                    My role models, including my parents and tech innovators like Elon Musk and Tim Berners-Lee, inspire my vision of using technology as a tool for social change.
+                </p>
+                
+            </div>
+            <div class="about-image">
+                <img src="./images/vusi.jpg" alt="Vusi Ntombela">
+            </div>
+        </section>
+        </div>
+        
+        <!-- Remaining sections as shown before (About, Projects, Skills, etc.) -->
+   
+      <section>
+        <h2>Tools & Frameworks</h2>
+        <div class="logo-slider">
+            <div class="slide-track">
+                <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" loading="lazy"></div>
+                <div class="slide"><img src="images\css.jpeg" alt="CSS" loading="lazy"></div>
+                <div class="slide"><img src="images\png-transparent-js-logo-javascript-thumbnail.png" alt="JavaScript" loading="lazy"></div>
+                <div class="slide"><img src="images\visual22.png" alt="Visual Studio Code" loading="lazy"></div>
+                <div class="slide"><img src="images\png-transparent-microsoft-azure-sql-database-microsoft-sql-server-database-blue-text-logo.png" alt="SQL Server" loading="lazy"></div>
+                <div class="slide"><img src="images\figma.png" alt="Figma" loading="lazy"></div>
+                <div class="slide"><img src="images\visu.png" alt="Visual Studio" loading="lazy"></div>
+                <div class="slide"><img src="images\github-6980894_1280.png" alt="Git" loading="lazy"></div>
+            </div>
+        </div>
+      </section>
+            
+                    <!-- Add more slides as needed -->
+         
+    
+        
+
+    <main>
+        <div class="project-card animate-on-scroll">
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./images/Screenshot 2024-10-02 213634.png" alt="Project Image">
+                    <div class="overlay">
+                        <h3>Neighborhood Watch Platform</h3>
+                        <p>A platform to help communities report suspicious activities and connect with local law enforcement.</p>
+                        <a href="https://your-live-demo-link.com" target="_blank" class="btn">
+                            <i class="fas fa-eye"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/your-repo" target="_blank" class="btn">
+                            <i class="fas fa-code"></i> View Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/CostrHireProj.png" alt="Heavy Equipment Hire">
+                    <div class="overlay">
+                        <h3>Heavy Equipment Hire</h3>
+                        <p>A platform for hiring heavy equipment, including management of bookings and live availability updates.</p>
+                        <a href="https://your-live-demo-link.com" target="_blank" class="btn">
+                            <i class="fas fa-eye"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/your-repo" target="_blank" class="btn">
+                            <i class="fas fa-code"></i> View Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/Screenshot 2024.png" alt="Project Image">
+                    <div class="overlay">
+                        <h3>University Sports Hub</h3>
+                        <p>A web application to track soccer and netball fixtures, including team management and live updates.</p>
+                        <a href="https://your-live-demo-link.com" target="_blank" class="btn">
+                            <i class="fas fa-eye"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/your-repo" target="_blank" class="btn">
+                            <i class="fas fa-code"></i> View Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/—Pngtree—man avatar image for profile_13001882.png" alt="Project Image">
+                    <div class="overlay">
+                        <h3>DR Cavity</h3>
+                        <p>A web application for managing dental appointments, patient records, and treatment plans.</p>
+                        <a href="https://your-live-demo-link.com" target="_blank" class="btn">
+                            <i class="fas fa-eye"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/your-repo" target="_blank" class="btn">
+                            <i class="fas fa-code"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            <div class="view-more-projects">
+                <a href="https://your-portfolio-link.com/projects" class="btn">
+                    <i class="fas fa-arrow-right"></i> View More Projects
+                </a>
+            </div>
+            </div>
+            <style>
+                .projects-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    gap: 20px;
+                    margin: 20px 0;
+                }
+                .project-card {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s;
+                }
+                .project-card img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.7);
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                }
+                .project-card:hover {
+                    transform: scale(1.05);
+                }
+                .project-card:hover .overlay {
+                    opacity: 1;
+                }
+                .btn {
+                    background-color: #007BFF;
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    margin: 5px;
+                    transition: background-color 0.3s;
+                }
+                .btn:hover {
+                    background-color: #0056b3;
+                }
+            </style>
+            </div>
+            <div class="project-card animate-on-scroll">
+            <section>
+                <div class="hire-me">
+                    <h2 class="animate__animated animate__rollIn">Why Hire Me?</h2>
+                    <p class="about-me animate__animated">
+                        As a passionate Web Developer and Creative Technologist, I bring a unique combination of technical expertise, creativity, and a strong work ethic. My knowledge spans various modern technologies like HTML, CSS, JavaScript, ASP.NET, and cloud platforms such as Azure. I'm dedicated to delivering high-quality, engaging user experiences and efficient solutions to complex problems.
+                    </p>
+                    </p>
+                       
+                    
+                  
+                    <a href="path/to/your-cv.pdf" class="download-btn" download>Download My CV</a>
+                    <script>
+                        const downloadBtn = document.querySelector('.download-btn');
+                        window.addEventListener('scroll', () => {
+                            const scrollPosition = window.scrollY + window.innerHeight;
+                            const elementPosition = downloadBtn.getBoundingClientRect().top + window.scrollY;
+                            if (scrollPosition > elementPosition) {
+                                downloadBtn.classList.add('animate__animated', 'animate__shakeX');
+                            }
+                        });
+                    </script>
+
+                </div>
+                
+            </section>
+            </div>
+        </section>
+        <div class="project-card animate-on-scroll">
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <span class="skill">HTML</span>
+                    <p>Proficient in structuring web pages using HTML5, ensuring semantic and accessible code.</p>
+                    <p>Example: Built the <strong>Neighborhood Watch Platform</strong> with a clean, user-friendly layout.</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill">CSS</span>
+                    <p>Experienced in styling responsive layouts with CSS3, focusing on aesthetics and user experience.</p>
+                    <p>Example: Designed a modern interface for the <strong>University Sports Hub</strong> project.</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill">JavaScript</span>
+                    <p>Skilled in creating dynamic web applications using JavaScript and ES6 features.</p>
+                    <p>Example: Implemented real-time score updates in the <strong>Sports Fixture App</strong>.</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill">ASP.NET</span>
+                    <p>Familiar with building web applications using ASP.NET, focusing on backend functionality.</p>
+                    <p>Example: Developed a payroll management system leveraging ASP.NET for secure data handling.</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill">MVC Frameworks</span>
+                    <p>Knowledgeable in MVC architecture, enabling efficient project organization and scalability.</p>
+                    <p>Example: Used MVC in the <strong>University Sports Hub</strong> to manage match and team data effectively.</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill">SQL Database</span>
+                    <p>Proficient in database design and management using SQL, ensuring data integrity and optimization.</p>
+                    <p>Example: Managed data for the <strong>Neighborhood Watch Platform</strong> using SQL Server.</p>
+                </div>
+              
+              
+                <div class="skill-card">
+                    <span class="skill">Figma</span>
+                    <p>Skilled in UI/UX design using Figma, creating prototypes and design systems.</p>
+                    <p>Example: Designed wireframes for the <strong>Sports Fixture App</strong> using Figma.</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill">Visual Studio Code</span>
+                    <p>Proficient in using VS Code for development, leveraging extensions for enhanced productivity.</p>
+                    <p>Example: Used VS Code for coding the <strong>Construction Vehicle Hire</strong>.</p>
+                </div>
+               
+                <div class="skill-card">
+                    <span class="skill">GitHub</span>
+                    <p>Proficient in version control with Github, managing code repositories and collaborating effectively.</p>
+                    <p>Example: Utilized Github for version control in all my projects, ensuring collaboration and code history.</p>
+                </div>
+            </div>
+        </section>
+        </div>
+  
+        <div class="project-card animate-on-scroll">
+    <section id="certifications">
+        <h2>Certifications & Courses</h2>
+        
+        <div class="certification-card">
+            <img src="path/to/cisco-certification.jpg" alt="Cisco Certification">
+            <h3>Cisco Certified Network Associate (CCNA)</h3>
+            <p>Completed in 2024 - Focused on networking fundamentals, security, and automation.</p>
+        </div>
+        
+        <div class="certification-card">
+            <img src="path/to/web-development-course.jpg" alt="Web Development Course">
+            <h3>Complete Web Development Bootcamp</h3>
+            <p>Learned HTML, CSS, JavaScript, and modern frameworks to build responsive web applications.</p>
+        </div>
+        
+        <div class="certification-card">
+            <img src="path/to/azure-course.jpg" alt="Azure Cloud Certification">
+            <h3>Microsoft Azure Fundamentals</h3>
+            <p>Certified in Azure cloud services with hands-on experience in cloud computing basics.</p>
+        </div>
+        
+        <!-- Add more certifications here -->
+    </section>
+        </div>
+        <section id="soft-skills" class="soft-skills-section">
+            <h2>Soft Skills</h2>
+            <div class="soft-skill-card">
+                <span class="soft-skill">
+                    <i class="fas fa-comments"></i> Communication
+                </span>
+                <p>Good at explaining ideas clearly to different people.</p>
+            </div>
+            <div class="soft-skill-card">
+                <span class="soft-skill">
+                    <i class="fas fa-users"></i> Teamwork
+                </span>
+                <p>Works well with others to get things done.</p>
+            </div>
+            <div class="soft-skill-card">
+                <span class="soft-skill">
+                    <i class="fas fa-lightbulb"></i> Problem-Solving
+                </span>
+                <p>Can find solutions to challenges quickly and effectively.</p>
+            </div>
+            <div class="soft-skill-card">
+                <span class="soft-skill">
+                    <i class="fas fa-sync-alt"></i> Adaptability
+                </span>
+                <p>Can adjust to new situations and learn new things easily.</p>
+            </div>
+        </section>
+        <style>
+            
+            .soft-skills-section {
+                background-color: #f9f9f9;
+                padding: 40px;
+                border-radius: 8px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            .soft-skills-section h2 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                color: #333;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .soft-skill-card {
+                background-color: #ffffff;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                padding: 20px;
+                margin: 15px 0;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+            .soft-skill-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            }
+
+            .soft-skill {
+                font-weight: bold;
+                font-size: 1.5em;
+                color: #007BFF;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .soft-skill-card p {
+                color: #666;
+                font-size: 1em;
+                line-height: 1.5;
+            }
+        </style>
+    
+
+        
+        <div class="project-card animate-on-scroll">
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="modal" class="modal" style="display:none;">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h3>Message Sent!</h3>
+                    <p><strong>Name:</strong> <span id="modalName"></span></p>
+                    <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+                    <p><strong>Message:</strong> <span id="modalMessage"></span></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="rating" class="rating-section">
+            <h2>Rate My Portfolio</h2>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5" class="star">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4" class="star">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3" class="star">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2" class="star">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1" class="star">&#9733;</label>
+            </div>
+            <p class="rating-message">Your rating: <span id="selected-rating">0</span> stars</p>
+            <div id="animation" class="animation" style="display:none;">Thank you for your rating!</div>
+        </section>
+
+        <style>
+            .animation {
+                font-size: 1.5em;
+                color: #007BFF;
+                margin-top: 20px;
+                animation: fadeIn 1s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+        </style>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const stars = document.querySelectorAll('.star-rating input');
+                const ratingMessage = document.getElementById('selected-rating');
+                const animationDiv = document.getElementById('animation');
+
+                stars.forEach(star => {
+                    star.addEventListener('change', () => {
+                        ratingMessage.textContent = star.value;
+                        animationDiv.style.display = 'block';
+                        setTimeout(() => {
+                            animationDiv.style.display = 'none';
+                        }, 2000); // Hide the message after 2 seconds
+                    });
+                });
+            });
+        </script>
+
+        <style>
+            .rating-section {
+                text-align: center;
+                margin: 20px 0;
+            }
+            .star-rating {
+                direction: rtl;
+                display: inline-block;
+                font-size: 2em;
+                cursor: pointer;
+            }
+            .star {
+                color: #ccc;
+                transition: color 0.2s;
+            }
+            .star:hover,
+            .star:hover ~ .star {
+                color: #f39c12;
+            }
+            input[type="radio"] {
+                display: none;
+            }
+            input[type="radio"]:checked ~ .star {
+                color: #f39c12;
+            }
+            @media (max-width: 600px) {
+                .star-rating {
+                    font-size: 1.5em;
+                }
+            }
+        </style>
+
+        <script>
+            const stars = document.querySelectorAll('.star-rating input');
+            const ratingMessage = document.getElementById('selected-rating');
+
+            stars.forEach(star => {
+                star.addEventListener('change', () => {
+                    ratingMessage.textContent = star.value;
+                });
+            });
+        </script>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                document.getElementById('modalName').textContent = document.getElementById('name').value;
+                document.getElementById('modalEmail').textContent = document.getElementById('email').value;
+                document.getElementById('modalMessage').textContent = document.getElementById('message').value;
+                document.getElementById('modal').style.display = 'block';
+            });
+
+            document.getElementById('closeModal').addEventListener('click', function() {
+                document.getElementById('modal').style.display = 'none';
+            });
+
+            // Close modal when clicking outside of it
+            window.addEventListener('click', function(event) {
+                const modal = document.getElementById('modal');
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        </script>
+        <style>
+            .modal {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                max-width: 500px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                animation: fadeIn 0.3s;
+            }
+
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+        </style>
+        </script>
+        </div>
+    </main>
+    
+
+    <footer>
+        <ul class="social-links">
+            <li><a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a></li>
+            <li><a href="https://your-portfolio.com" target="_blank"><i class="fas fa-user"></i> Portfolio</a></li>
+        </ul>
+        <p>&copy; 2024 VuCii Dev. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js">document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const aboutMeSections = document.querySelectorAll('.about-me');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__bounceInLeft'); // Trigger animation
+                observer.unobserve(entry.target); // Stop observing once animation has been triggered
+            }
+        });
+    });
+
+    aboutMeSections.forEach(section => {
+        observer.observe(section);
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('.animate-on-scroll');
+
+    const options = {
+        root: null, // Use the viewport as the container
+        rootMargin: '0px',
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // Add class to trigger animation
+                observer.unobserve(entry.target); // Stop observing after it has been animated
+            }
+        });
+    }, options);
+
+    elements.forEach(element => {
+        observer.observe(element); // Start observing each element
+    });
+});
+
+
+
+    </script>
+   
+        
+</body>
+</html>
+
+<style>
+    @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    animation: shake 0.9s infinite; /* Apply the shake animation */
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.no-shake {
+    animation: none; /* Remove animation */
+}
+
+    .animate-on-scroll {
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Optional transition */
+}
+
+.animate-on-scroll.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset transform */
+}
+
+/* Adjust as needed for your animations */
+.animate-on-scroll {
+    transform: translateY(50px); /* Start slightly below */
+}
+
+    .about-me {
+    opacity: 0; /* Hidden before scroll */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.about-me.animate__bounceInLeft {
+    opacity: 1; /* Fade in with animation */
+}
+
+    #certifications {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#certifications h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.certification-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.certification-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.certification-card h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.certification-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+    .download-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745; /* Green color */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.animate__animated {
+    --animate-duration: 1s; /* Set animation duration */
+}
+
+    .cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+.animate__animated {
+    --animate-duration: 1s; /* Animation duration */
+}
+
+/* Optional: Customize the bounce animation speed */
+.animate__bounce {
+    animation-duration: 1.5s; /* Slower bounce effect */
+}
+
+    .animate__animated {
+    --animate-duration: 1.5s; /* Adjust the animation duration */
+}
+
+p.animate__animated {
+    --animate-delay: 0.3s; /* Add a slight delay for the paragraph */
+}
+
+    .animate__animated {
+    --animate-duration: 1.5s; /* Change animation duration if needed */
+}
+
+.cta-btn {
+    --animate-delay: 0.5s; /* Delay the button animation */
+}
+
+    .avatar {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%; /* Makes it a circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    animation: wobble 2s infinite ease-in-out;
+}
+
+/* Wobbly Animation */
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.avatar:hover {
+    transform: scale(1.1); /* Slightly enlarges avatar on hover */
+}
+
+    .hire-me {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hire-me h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hire-me p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #2980b9;
+}
+
+
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #555;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+    .logo-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.slide {
+    width: 20px; /* Adjust size according to your preference */
+    margin: 0 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+    .about-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-content {
+    flex: 1;
+    margin-right: 20px; /* Space between content and image */
+}
+
+.about-image img {
+    max-width: 300px; /* Adjust size as needed */
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+    #tools {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+}
+
+.slideshow-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    gap: 10px; /* Space between logos */
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 20%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 70px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional for rounded corners */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+      .resume-button {
+        padding: 10px 20px;
+        background-color: #ff5733;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .resume-button:hover {
+        background-color: #e74c3c;
+    }
+     #contact {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h2 {
+        color: #0056b3;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input, textarea {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #0056b3;
+        outline: none;
+    }
+
+    button {
+        padding: 15px;
+        background-color: #ff5733;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #e74c3c;
+    }
+
+    textarea {
+        resize: none; /* Prevent resizing of the textarea */
+        height: 100px; /* Fixed height */
+    }
+     #skills {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    h2 {
+        color: #0056b3;
+        margin-bottom: 40px;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .skill-card {
+         background: linear-gradient(to right, #0f2027, #2c5364);
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        flex: 1 1 250px; /* Responsive sizing */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .skill {
+        font-weight: bold;
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+body {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+/* Avatar styling */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 4px solid #00d9ff;
+}
+#about {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff5733; /* Highlight color for important points */
+        }
+
+/* Social Links */
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    margin: 0 15px;
+}
+
+.social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links li a:hover {
+    color: #00d9ff;
+}
+
+/* Style for icons inside links */
+.social-links li a i {
+    margin-right: 8px;
+}
+
+/* Header section */
+header {
+    height: 100vh;
+    background: linear-gradient(to right, #0f2027, #2c5364);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 span {
+    color: #00d9ff;
+}
+
+.cta-btn {
+    background-color: #00d9ff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #008CBA;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(to right, #0f2027, #2c5364);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #00d9ff;
+}
+
+.intro h1 span {
+    color: #00d9ff;
+}
+
+.cta-btn {
+    background-color: #00d9ff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #008CBA;
+}
+
+section {
+    padding: 10px;
+    text-align: center;
+}
+
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+footer {
+    background-color: #0f2027;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.cta-btn {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#about {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: left;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-content strong {
+    font-size: 18px;
+    color: #00d9ff;
+}
+
+
+</style>
