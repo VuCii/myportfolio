@@ -4,12 +4,13 @@
     --background-color: #f4f4f9;
     --text-color: #333;
 }
-
 body {
-    font-family: 'Pacifico', cursive; /* A fun yet professional font */
+    font-family: 'Roboto', sans-serif; /* A clean and professional font */
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
+    margin: 0; /* Remove default margin for a cleaner look */
+    padding: 20px; /* Add padding for better spacing */
 }
 
 /* Header styles */
